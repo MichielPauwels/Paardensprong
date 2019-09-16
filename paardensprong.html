@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Paardensprong</title>
+        <link rel="icon" href="https://cdn.imgbin.com/9/18/17/imgbin-chess-piece-knight-pin-chessboard-chess-knight-s-black-horse-illustration-YneKYehxb5rQzJwf1V5yh0EZ4.jpg">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" type = "text/css" href = "paardensprong.css" />
+        <script src="solutions.js"></script>
+        <script src="paardensprong.js"></script>
+    </head>
+    <body onload="loadElements()">
+        <h1>Paardensprong generator</h1>
+        <div class="form">
+            <label for="number">Grootte paardensprong:</label>
+            <select name="" id="number">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <label for="text">Woord in de paardensprong:</label>
+            <input type="text" id="text">
+            <button onclick="getSolution()">Bereken</button>
+        </div>
+        <div class="solution" id="solution"></div>
+        <div class="loader" id="spinner"></div>
+    </body>
+</html>
